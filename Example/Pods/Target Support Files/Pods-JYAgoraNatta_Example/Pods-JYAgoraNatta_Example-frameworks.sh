@@ -176,10 +176,34 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/JYAgoraNatta/JYAgoraNatta.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraDav1d.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/Agorafdkaac.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/Agoraffmpeg.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraRtcKit.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraRtmKit.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraSoundTouch.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/JIChatRoom.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/JIYCuteKit.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/KTVCocoaHTTPServer.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/KTVHTTPCache.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/libpag.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/Masonry.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/MJExtension.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/JYAgoraNatta/JYAgoraNatta.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraDav1d.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/Agorafdkaac.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/Agoraffmpeg.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraRtcKit.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraRtmKit.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraSoundTouch.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/JIChatRoom.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/JIYCuteKit.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/KTVCocoaHTTPServer.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/KTVHTTPCache.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/libpag.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/Masonry.framework"
+  install_framework "${PODS_ROOT}/../../JYAgoraNatta/Classes/MJExtension.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

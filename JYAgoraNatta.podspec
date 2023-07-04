@@ -25,16 +25,18 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'JYAgora' => 'wander_jiyi@163.com' }
-  s.source           = { :git => 'https://github.com/jiyifanzi/JYAgoraSDK.git', :tag => s.version.to_s }
+  # s.source           = { :git => 'https://github.com/jiyifanzi/JYAgoraSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jiyifanzi/JYAgoraSDK.git'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = 'JYAgoraNatta/Classes/**/*'
+  # s.source_files = 'JYAgoraNatta/Classes/**/*'
   s.resources = 'JYAgoraNatta/Assets/*.png'
-  # s.resource_bundles = {
-  #   'JYAgoraNatta' => ['JYAgoraNatta/Assets/*.png']
-  # }
+  s.vendored_frameworks = "JYAgoraNatta/Classes/*.framework"
+
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

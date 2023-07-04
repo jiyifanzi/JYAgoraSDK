@@ -12,12 +12,11 @@
     "JYAgora": "wander_jiyi@163.com"
   },
   "source": {
-    "git": "https://github.com/JYAgora/JYAgoraNatta.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/jiyifanzi/JYAgoraSDK.git"
   },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "JYAgoraNatta/Classes/**/*",
-  "resources": "JYAgoraNatta/Assets/*.png"
+  "resources": "JYAgoraNatta/Assets/*.png",
+  "vendored_frameworks": "JYAgoraNatta/Classes/*.framework"
 }

@@ -61,7 +61,7 @@
 		6286F3AB402061A544726958 /* Pods_JYAgoraNatta_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYAgoraNatta_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E23968FF0C52DDA1AC11DBA /* Pods-JYAgoraNatta_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYAgoraNatta_Example.release.xcconfig"; path = "Target Support Files/Pods-JYAgoraNatta_Example/Pods-JYAgoraNatta_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7E6721C4DAC01DADA2081EBD /* JYAgoraNatta.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JYAgoraNatta.podspec; path = ../JYAgoraNatta.podspec; sourceTree = "<group>"; };
+		7E6721C4DAC01DADA2081EBD /* JYAgoraNatta.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JYAgoraNatta.podspec; path = ../JYAgoraNatta.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		808D8E2CDEB268F60A05ED22 /* Pods_JYAgoraNatta_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYAgoraNatta_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FB2CAD93396092C96FDAD91 /* Pods-JYAgoraNatta_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYAgoraNatta_Tests.release.xcconfig"; path = "Target Support Files/Pods-JYAgoraNatta_Tests/Pods-JYAgoraNatta_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,7 +207,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				85998BD535CAE4ABCC2F4E74 /* [CP] Embed Pods Frameworks */,
+				CB3A6326C8B716E263D35316 /* [CP] Copy Pods Resources */,
+				8B018C9E7094DEA8CB27DBE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,22 +321,64 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		85998BD535CAE4ABCC2F4E74 /* [CP] Embed Pods Frameworks */ = {
+		8B018C9E7094DEA8CB27DBE9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JYAgoraNatta_Example/Pods-JYAgoraNatta_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/JYAgoraNatta/JYAgoraNatta.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraDav1d.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/Agorafdkaac.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/Agoraffmpeg.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraRtcKit.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraRtmKit.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/AgoraSoundTouch.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/JIChatRoom.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/JIYCuteKit.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/KTVCocoaHTTPServer.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/KTVHTTPCache.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/libpag.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/Masonry.framework",
+				"${PODS_ROOT}/../../JYAgoraNatta/Classes/MJExtension.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JYAgoraNatta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraDav1d.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agorafdkaac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agoraffmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtcKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtmKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSoundTouch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JIChatRoom.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JIYCuteKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KTVCocoaHTTPServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KTVHTTPCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libpag.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JYAgoraNatta_Example/Pods-JYAgoraNatta_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB3A6326C8B716E263D35316 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JYAgoraNatta_Example/Pods-JYAgoraNatta_Example-resources.sh",
+				"${PODS_ROOT}/../../JYAgoraNatta/Assets/color_common_empty_user_sdk.png",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/color_common_empty_user_sdk.png",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JYAgoraNatta_Example/Pods-JYAgoraNatta_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1C97436EEA688E4DC8F7C9A /* [CP] Check Pods Manifest.lock */ = {
