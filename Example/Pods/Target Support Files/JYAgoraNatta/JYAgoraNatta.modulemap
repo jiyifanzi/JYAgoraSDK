@@ -1,0 +1,6 @@
+framework module JYAgoraNatta {
+  umbrella header "JYAgoraNatta-umbrella.h"
+
+  export *
+  module * { export * }
+}

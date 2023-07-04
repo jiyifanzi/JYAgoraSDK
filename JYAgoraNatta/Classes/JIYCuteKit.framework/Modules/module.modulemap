@@ -1,0 +1,6 @@
+framework module JIYCuteKit {
+  umbrella header "JIYCuteKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

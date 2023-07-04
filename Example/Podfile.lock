@@ -1,0 +1,16 @@
+PODS:
+  - JYAgoraNatta (0.1.0)
+
+DEPENDENCIES:
+  - JYAgoraNatta (from `../`)
+
+EXTERNAL SOURCES:
+  JYAgoraNatta:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JYAgoraNatta: 6e201434f3f11b8d7255de613066005f15d78807
+
+PODFILE CHECKSUM: 5bc42dda37a600b729b523d5de99873b1a88f89f
+
+COCOAPODS: 1.11.3

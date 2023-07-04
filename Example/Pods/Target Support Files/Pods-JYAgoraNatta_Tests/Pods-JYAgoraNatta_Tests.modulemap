@@ -1,0 +1,6 @@
+framework module Pods_JYAgoraNatta_Tests {
+  umbrella header "Pods-JYAgoraNatta_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

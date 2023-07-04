@@ -1,0 +1,6 @@
+framework module JIChatRoom {
+  umbrella header "JIChatRoom-umbrella.h"
+
+  export *
+  module * { export * }
+}

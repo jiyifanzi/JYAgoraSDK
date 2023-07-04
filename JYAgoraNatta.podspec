@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'JYAgoraNatta/Classes/**/*'
-  
+  s.resources = 'JYAgoraNatta/Assets/*.png'
   # s.resource_bundles = {
   #   'JYAgoraNatta' => ['JYAgoraNatta/Assets/*.png']
   # }
